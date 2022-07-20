@@ -91,6 +91,7 @@ Spread operator helps us to expand the strings or array literals or object liter
 
 ## 13. what is strict mode?
 Strict mode makes several changes to JavaScript semantics. It eliminates silent errors and instead throws them so that the code won't run with errors in the code. It will also point out mistakes that prevent JavaScript engines from doing optimizations.
+    "use strict"   - write in the top of code.
 
 ## 14. what is promise in javascript?
 Promise is a constructor fun , which takes two arguments/parameters, resolve and reject.If the promise has been resolved properly then it will go to the .then block and if the promise has been rejected due to some errors then it will go to the .catch block.
@@ -98,7 +99,7 @@ Promise is a constructor fun , which takes two arguments/parameters, resolve and
 the "Callbacks in JavaScript" article, callback functions used to handle asynchronous execution. A callback function indicates the operation which JavaScript should execute once an asynchronous operation finishes.
 
 ## 15. What does the break statement do ?
-The break statement breaks out of a switch or a loop. In a switch, it breaks out of the switch block. This stops the execution of more code inside the switch. In in a loop, it breaks out of the loop and continues executing the code after the loop
+The break statement breaks out of a switch or a loop. In a switch, it breaks out of the switch block. This stops the execution of more code inside the switch. In a loop, it breaks out of the loop and continues executing the code after the loop
 
 ## 16. What does continue statement do?
 The continue statement terminates execution of the statements in the current iteration of the current or labeled loop, and continues execution of the loop with the next iteration.
@@ -115,3 +116,34 @@ The Event Loop is a queue of callback functions. When an async function executes
 
 ## 20. Difference between Syncronous and Asyncronous Javascript.
 Synchronous code runs in sequence. This means that each operation must wait for the previous one to complete before executing. Asynchronous code runs in parallel. This means that an operation can occur while another one is still being processed.
+
+## 21. What is Api & Rest Api?
+An API, or application programming interface, is a set of rules that define how applications or devices can connect to and communicate with each other. A REST API is an API that conforms to the design principles of the REST, or representational state transfer architectural style.
+ex for Api: Pay from paypal, travel booking.
+
+## 22. What is react and why do we use it?
+React is a JavaScript library developed by Facebook which, among other things, was used to build Instagram.com. Its aim is to allow developers to easily create fast user interfaces for websites and applications alike. The main concept of React. js is virtual DOM and React is flexible.
+
+## 23. What is a global state in React?
+In React, originally, the state is held and modified within the same React component . In most applications, different components may need to access and update the same state. This is achieved by introducing the global states in your app.
+
+## 24. What is Routing ?
+Routing is a process in which a user is directed to different pages based on their action or request. ReactJS Router is mainly used for developing Single Page Web Applications. React Router is used to define multiple routes in the application.
+
+## 25. What is redux ?
+Redux is a predictable state container designed to help you write JavaScript apps that behave consistently across client, server, and native environments and are easy to test. While it's mostly used as a state management tool with React, you can use it with any other JavaScript framework or library.
+
+## 26. what is virtual dom?
+DOM is a document object model, created by converting HTML CSS and JS Real DOM, which is an object which gets created whenever any React application gets loaded on the screen for the first time., whenever React components gets mounted on the screen for the first time. Now when any user makes any changes on the screen like button click because of which the state variable will get updated so in this case the changes will not directly go to Real DOM , instead in react we have concept known Virtual DOM. So we are having two virtual doms, one virtual dom gets created at the time of mounting of react component so it is a copy of your real dom. Another virtual dom is the dom which contains the new changes, updated state variables values. Now these two virtual doms will get compared with each other and will check for the new changes. this complete procedure is known as diffing algorithm. Now the new changes will be updated in your Real dom. this procedure is known as Recoinciliation.
+
+## 27. What is Axios and why do we use it?
+Axios is a promised-based HTTP client for JavaScript. It has the ability to make HTTP requests from the browser and handle the transformation of request and response data.
+It is mainly used to send asynchronous HTTP requests to REST endpoints. This library is very useful to perform CRUD operations. This popular library is used to communicate with the backend. Axios supports the Promise API, native to JS ES6.
+
+## 28. what is useref hook?
+useRef returns a mutable ref object whose .current property is initialized to the passed argument (initialValue). The returned object will persist for the full lifetime of the component.
+It is useful whenever you want to reference the same value on every render, but not trigger a re-render when its value changes.
+
+## 29. what are callback function?
+A callback function is a function that is passed as an argument to another function, to be “called back” at a later time. A function that accepts other functions as arguments is called a higher-order function, which contains the logic for when the callback function gets executed. It’s the combination of these two that allow us to extend our functionality.
+

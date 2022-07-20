@@ -24,16 +24,16 @@ setInterval(function () {
   }, 2000);
 
  //Spread Operator
- let a;
- a=[1,2,3,4];
- b=a;
- b=[...a];
+ let x;
+ x=[1,2,3,4];
+ y=x;
+ y=[...x];
 
  //strict mode..
 
  //in normal we can write like ..
- console.log("value of ac ", ac);
  ac=10;
+ console.log("value of ac ", ac);
 
  //in strict mode.
  "use strict"
@@ -54,7 +54,7 @@ setInterval(function () {
  print(23).then((response)=>{
   console.log(response);
  }).catch((error) =>{
-  console.log(reject);
+  console.log(error);
  }).finally(()=>{
   console.log("Promise completed successfully.")
  })
@@ -74,8 +74,44 @@ console.log(generatorObject.next().value); // Line 6
 //Bubbling:
 document.getElementById("child").addEventListener("click", function () {
               console.log("You clicked the Child element!");
-          }, false)();
+          }, false);
    
 document.getElementById("parent").addEventListener("click", function () {
               console.log("You clicked the parent element!");
-          }, false)();
+          }, false);
+
+//callback
+function printA(){
+  console.log("A");
+}
+function printB(){
+  console.log("B");
+}
+printA()
+printB()
+printA(printB());
+
+//useRef
+import { useState,useEffect,  useRef, Fragment } from "react";
+
+function UseRef() {
+  const [inputValue, setInputValue] = useState("");
+  const count = useRef(0);
+
+  useEffect(() => {
+    count.current = count.current + 1;
+  });
+
+  return (
+    <Fragment>
+      <input
+        type="text"
+        value={inputValue}
+        onChange={(e) => setInputValue(e.target.value)}
+      />
+      <h1>Render Count: {count.current}</h1>
+    </Fragment>
+  );
+}
+
+export default UseRef;
