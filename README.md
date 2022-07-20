@@ -21,3 +21,12 @@ JS-Interview Questions-short :
 18. what is bubbling 
 19. what is event Loop
 20. Difference between Syncronous and Asyncronous Javascript
+21. What is Api & Rest Api 
+22. What is react and why do we use it?
+23. What is a global state in React?
+24. What is Routing ?
+25. What is redux ?
+26. what is virtual dom?
+27. What is Axios and why do we use it?
+28. what is useref hook?
+29. what are callback function?
