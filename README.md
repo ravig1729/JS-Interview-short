@@ -30,3 +30,11 @@ JS-Interview Questions-short :
 27. What is Axios and why do we use it?
 28. what is useref hook?
 29. what are callback function?
+30. what is jsx and which transpiler we use
+31. what is state and props
+32. what is negative infinity
+33. Difference between Stateful and stateless component
+34. Explain React folder structure
+35. What is babel 
+36. difference between default export and named export
+37. What are hooks and how many hooks are there 
