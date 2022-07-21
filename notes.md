@@ -147,3 +147,62 @@ It is useful whenever you want to reference the same value on every render, but 
 ## 29. what are callback function?
 A callback function is a function that is passed as an argument to another function, to be “called back” at a later time. A function that accepts other functions as arguments is called a higher-order function, which contains the logic for when the callback function gets executed. It’s the combination of these two that allow us to extend our functionality.
 
+## 30. what is jsx and which transpiler we use?
+JSX stands for JavaScript syntax extension. It is a JavaScript extension that allows us to describe React's object tree using a syntax that resembles that of an HTML template. It is just an XML-like extension that allows us to write JavaScript that looks like markup and have it returned from a component.
+Whenever we write React Code, we always build/transpile it to JavaScript that browsers can understand. This is generally done with tools like Babel or TypeScript. If you use tools and libraries like Create React App, they will do the transpilation for you behind the scenes.
+
+## 31. what is state and props?
+Props are used to pass data, whereas state is for managing data. Data from props is read-only, and cannot be modified by a component that is receiving it from outside. State data can be modified by its own component, but is private (cannot be accessed from outside).
+
+## 32. what is negative infinity?
+NEGATIVE_INFINITY is the same as the negative value of the global object's Infinity property. This value behaves slightly differently than mathematical infinity: Any positive value, including POSITIVE_INFINITY , multiplied by NEGATIVE_INFINITY is NEGATIVE_INFINITY .
+
+## 33. Difference between Stateful and stateless component.
+ # Stateless:
+If the behaviour is independent of its state then it can be a stateless component. You can use either a function or a class for creating stateless components. But unless we need to use a lifecycle hook in your components, we should go for function components. There are a lot of benefits if you decide to use function components here; they are easy to write, understand, and test, a little faster, and you can avoid the this keyword altogether.
+ # Stateful:
+If the behaviour of a component is dependent on the state of the component then it can be termed as stateful component. These stateful components are always class components and have a state that gets initialized in the constructor. class App extends Component { constructor(props) { super(props) this.state = { count: 0 } }
+ ## Notes:
+ Hooks let you use state and other React features without writing classes. The Equivalent Functional Component import React, {useState} from 'react'
+
+## 34. Explain React folder structure.
+whenever we create a React project, it automatically creates a lot of files and folders. So, in this article, I am going to explain what these files and folders are.
+When we create a React project, our application's structure looks like this.
+# Readme.md : 
+MarkDown Documentation= md This contains information about the project that which file contains what information and also contains info like how a new person who is starting with the project how they have to start with the project
+# package.json : 
+It contains the information about the project and also contains the libraries which the project is using and it also has the description of the commands which gets used to run test or build your project.
+# package-lock.json : 
+It contains information about the major libraries and if these libraries are having any extra dependency on other libraries so that information will also be stored over here.
+# .gitignore: 
+we can list down all the folders or file which we do not want to push during pushing the changes in github like node_modules.
+# public/index.html: 
+this file contains one div element in which a id is stored which is used to render your complete application at this id.
+# src/index.js : 
+In this file you will render your complete React application at the id given in index.html file.
+# src/App.js : 
+From this file ,developers can start building their React application.
+# node_modules:
+Modules are the blocks of encapsulated code that communicates with an external application on the basis of their related functionality. Modules can be a single file or a collection of multiples files/folders.
+
+## 35. What is babel ?
+Babel is a free and open-source JavaScript transcompiler that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript that can be run by older JavaScript engines. Babel is a popular tool for using the newest features of the JavaScript programming language.
+
+## 36. Difference between default export and named export.
+Exports without a default tag are Named exports. Exports with the default tag are Default exports. Using one over the other can have effects on your code readability, file structure, and component organization. Named and Default exports are not React-centric ideas.
+          //NAMED export:
+          export const MyFunction = () => {
+            // ...body
+          }
+
+          //DEFAULT export
+          export default MyComponent;
+
+## 37. What are hooks and types and use of hooks ?
+Hooks are the new feature introduced in the React 16.8 version. It allows you to use state and other React features without writing a class. Hooks are the functions which "hook into" React state and lifecycle features from function components.
+Use : Hooks are functions that let you “hook into” React state and lifecycle features from function components. Hooks don't work inside classes — they let you use React without classes.
+Types: They are 10 in-built hooks, but most commonly used.
+          useState()
+          useEffect()
+          useContext()
+          useReducer()
