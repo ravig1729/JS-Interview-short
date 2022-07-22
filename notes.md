@@ -206,3 +206,18 @@ Types: They are 10 in-built hooks, but most commonly used.
           useEffect()
           useContext()
           useReducer()
+
+## 38. Show me example for star pattern.
+--> go to index.js (line no:133-142))
+
+## 39. REMOVE Duplicate elements in the array
+--> go to index.js (line no:144-147)
+
+## 40. Fetch data from https://jsonplaceholder.typicode.com/todos
+--> go to index.js (line no:149-152)
+
+## 41. Find Repeated Numbers from Array?
+--> go to index.js (line no:154-157)
+
+## 42. Find the vowels in string ?
+--> go to index.js (line no:159-161)

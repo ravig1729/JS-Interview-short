@@ -129,3 +129,34 @@ console.log(checkNumber(-Number.MAX_VALUE));
 
 console.log(checkNumber(-Number.MAX_VALUE * 2));
 // expected output: "Process number as -Infinity"
+
+//Left Triangle Pattern
+let n = 5;
+let string = "";
+for (let i = 1; i <= n; i++) {
+  for (let j = 0; j < i; j++) {
+    string += "*";
+  }
+  string += "\n";
+}
+console.log(string);
+
+//Remove characters from an array.
+let char = ['A', 'B', 'A', 'C', 'B'];
+let uniqueChar = [...new Set(char)];
+console.log(uniqueChar);
+
+//Fetch data from https://jsonplaceholder.typicode.com/todos
+fetch('https://jsonplaceholder.typicode.com/todos/')
+  .then(response => response.json())
+  .then(json => console.log(json))
+
+//Find Repeated Numbers from Array
+const arr = [1, 2, 1, 3, 4, 3, 5];
+const repeat = arr => arr.filter((item, index) => arr.indexOf(item) !== index)
+console.log(repeat(arr));
+
+//Find the vowels in string ?
+var Str = 'RaviViswanadh'
+console.log(Str.split("").filter(x =>(x=='a' || x=='e' || x=='i' || x=='o'|| x=='u')));
+//console.log(Str.match(/[aeiou]/gi))
