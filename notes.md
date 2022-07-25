@@ -221,3 +221,62 @@ Types: They are 10 in-built hooks, but most commonly used.
 
 ## 42. Find the vowels in string ?
 --> go to index.js (line no:159-161)
+
+## 43. What is Node js and Express js ?
+ Node.js:
+Node.js is an open source and cross-platform runtime environment for executing JavaScript code outside of a browser. You need to remember that NodeJS is not a framework and it’s not a programming language. We often use Node.js for building back-end services like APIs like Web App or Mobile App. It’s used in production by large companies such as Paypal, Uber, Netflix, Walmart and so on.
+ Express.js:
+Express is a small framework that sits on top of Node.js’s web server functionality to simplify its APIs and add helpful new features. It makes it easier to organize your application’s functionality with middle ware and routing. It adds helpful utilities to Node.js’s HTTP objects. It facilitates the rendering of dynamic HTTP objects.
+
+## 44. what is Router in nodejs ?
+The route is a section of Express code that associates an HTTP verb (GET, POST, PUT, DELETE, etc.), an URL path/pattern, and a function that is called to handle that pattern. Node. js is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code outside of a browser.
+
+## 45. What is JWT token?
+JWT, or JSON Web Token, is an open standard used to share security information between two parties — a client and a server. Each JWT contains encoded JSON objects, including a set of claims. JWTs are signed using a cryptographic algorithm to ensure that the claims cannot be altered after the token is issued.
+
+## 46. What is the difference between Encryption and Decryption ?
+Encryption	
+1.	It is a method of transforming a plain or clear text into ciphertext using a key.	
+2.	Process of encryption takes place at the sender’s end.	
+3.	The encrypted data is called Ciphertext.	
+4.	A public key or secret key is used in the process of Encryption.	
+5.	In encryption the sender sends the data once it is encrypted.	
+Decryption:
+1. It is a method of transforming ciphertext into plain or clear text.
+2. Process of decryption takes place at the receiver’s end.
+3. Decrypted data is called Plain text.
+4. A secret key or private key is used in the process of Decryption.
+5. In decryption, the receiver decodes the data once it is received.
+
+## 47. Difference between Authentication and Authorization .
+Authentication:	
+1. Determines whether users are who they claim to be.
+2. Challenges the user to validate credentials (for example, through passwords, answers to security questions, or facial recognition).	
+3. Usually done before authorization.	
+4. Generally, transmits info through an ID Token.
+5. Ex: Employees in a company are required to authenticate through the network before accessing their company email
+Authorization:
+1. Determines what users can and cannot access.
+2. Verifies whether access is allowed through policies and rules.
+3. Usually done after successful authentication.
+4. Generally, transmits info through an Access Token.
+5. Ex: After an employee successfully authenticates, the system determines what information the employees are allowed to access
+
+## 48. What is hashing and uses of hashing ?
+Hashing is the process of converting a given key into another value. A hash function is used to generate the new value according to a mathematical algorithm. The result of a hash function is known as a hash value or simply, a hash.
+For example, if you have a list of 20000 numbers, and you have given a number to search in that list- you will scan each number in the list until you find a match. Password Verification.
+
+## 49. Implementation of middlewares .
+It checks out the correct user. It is a function tajes 3 parameters, those are request, response, next. Middleware is smtng which will be executed first before any route gets executed.
+--> go to index.js (line no:164-180).
+
+## 50. What is the difference between HTML5 and HTML4?
+Both Html5 vs Html4 are popular choices in the market; let us discuss some of the major Difference:
+
+1. HTML5 is still in the process of evolution and the currently available tags are being modified and also new tags are being added. Therefore, HTML5 lags behind HTML4 in terms of compatibility with the different browsers. HTML4 is an established standard for developing browser applications and has been in use for more than 10 years. For this reason, HTML4 is compatible with almost all web-browsers
+2. In HTML5, <a>this tag has been removed. A new <abbr> tag has been introduced.HTML4 contained an <acronym> tag that was used for displaying abbreviations in a web browser.
+3. In Html5  <meta > tag has been removed, <meta> tag is defined in the header section of the HTML document and contains information about the data. In HTML 4 this tag used to contain an attribute called schema that defined the schema of the document
+4. In Html5 <canvas> tag introduced, canvas is a rectangular area in HTML page. The <canvas> tag is used to draw graphics using JavaScript. It is a container for graphics. Inside this container, graphics are drawn using JavaScript. Canvas has different methods for boxes, paths, circles, characters and adding images. By default, it has no border and no content.
+
+## 51. what is the difference between CSS3 and CSS2?
+follow the html..

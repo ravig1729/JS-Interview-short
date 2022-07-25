@@ -160,3 +160,21 @@ console.log(repeat(arr));
 var Str = 'RaviViswanadh'
 console.log(Str.split("").filter(x =>(x=='a' || x=='e' || x=='i' || x=='o'|| x=='u')));
 //console.log(Str.match(/[aeiou]/gi))
+
+//Implementation of Middlewares:
+const express = require("express");
+//creating a server
+const server = express();
+const middleware1 = (req, res, next) =>{
+  console.log("hello, this is middleware1");
+  next();  //checks any other middlwares, if not it goes with server- get and used to block the flow & take it back to the requested route.
+}
+server.get("/",(req, res) =>{
+  res.send({name:"Ravi"})
+})
+server.get("/user",(req, res)=>{
+  res.send("HRU")
+})
+server.listen(3001,()=>{
+  console.log("server is running at port no: 3001")
+})
