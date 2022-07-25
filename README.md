@@ -57,5 +57,4 @@ JS-Interview Questions-short :
 1. Introduction of Yourself .
 2. How  many  Technologies you know and what are they ?
 3. Explain your projects .
-=======
->>>>>>> 6a91b42dd1fbfc4d9ecec425b9c487071d58b4c8
+
